@@ -15,11 +15,17 @@ a:hover{
   width:1000px;
   padding:20px;
   margin-top:50px;
-  margin-left:400px;
-  margin-right:400px;
+  margin-left:500px;
+  margin-right:500px;
   color:black;
 
 }
+
+/*.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+*/
 
 h1{
   font-size: 60px;
@@ -55,6 +61,6 @@ a:hover{
 
 img{
 
-width:2000px;
+width:1500px;
 
 }
