@@ -1,0 +1,37 @@
+body{
+	background-color: #FFFF67;
+}
+
+
+#st{
+  position:fixed;
+  display:flex;
+  flex-direction:row; 
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.square{
+	background-color:#CB88FF;
+	width:100px;
+	height:100px;
+	margin:50px;
+	 -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+}
+
+
+
+.square:hover {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    width:70px;
+	height:70px;
+    border-style: solid;
+    border-color: #00FF6D;
+    border-width: 15px;
+}
+
+  

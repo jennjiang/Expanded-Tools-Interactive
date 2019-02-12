@@ -1,9 +1,17 @@
-* {
+/** {
 	box-sizing: border-box;
+}*/
+.main{
+	width: 2000px;
+	margin: 0px;
+	padding: 10px;
+    margin-left:900px;
+    margin-right:900px;
 }
 
-body{
 
+body{
+    justify-content: center;
 	font-family: sans-serif;
 	line-height: 1.5em;
 	background:white;
@@ -16,19 +24,20 @@ h1{
 	font-style: bold;
 }
 
-.main{
-	width: 80%;
-	margin: 100px auto;
-	padding: 50px;
-}
+img{
 
+width:1700px;
+
+}
 
 ul{
 	list-style: none;
 }
  
 ul li{
-	color: #dadada;
+	color: black;
+	font-size:50px;
+	padding:10px;
 }
 
 a:link{
