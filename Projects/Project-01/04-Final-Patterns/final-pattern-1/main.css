@@ -23,6 +23,19 @@ body{
   justify-content:center;
   
 }
+
+@keyframes color{
+  0%{
+     background-color:lime; opacity:0;
+   }
+  50%{
+     background-color:yellow;
+  }
+  100%{
+     background-color:#ff00a6; opacity:50%;
+  }
+}
+
 .circle{
 display: inline-block;
 transform: rotate(-80deg);
@@ -34,17 +47,22 @@ border-bottom-right-radius: 50%;
 background-color:yellow;
 padding:20px;
 margin:50px;
--webkit-transition: background-color 2s ease-out;
+transform: scale(0.9);
+animation: color 5s infinite;
+animation-timing-function: ease-out;
+animation-direction: alternate;
+/* -webkit-transition: background-color 2s ease-out;
 -moz-transition: background-color 2s ease-out;
 -o-transition: background-color 2s ease-out;
-transition: background-color 2s ease-out;
+transition: background-color 2s ease-out; */
 }
 
 
-.circle:hover {
+/* .circle:hover {
   background-color:#ff00a6 ;
   cursor: pointer;
-}
+} */
+
 
 .circle1{
   width: 100px;
@@ -57,7 +75,6 @@ transition: background-color 2s ease-out;
   padding:20px;
   margin:50px;
 }
-
 
 
 
