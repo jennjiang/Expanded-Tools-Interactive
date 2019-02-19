@@ -7,29 +7,52 @@
     background-image: linear-gradient(to right,  #ffc6a6, #ffbfef); opacity: 0.6;
     mix-blend-mode: multiply;
     } */
-@keyframes color{
-  0%{
-    background-color:rgb(255, 217, 0);
-  }
-  50%{
-    background-color: rgb(187, 255, 0);
-  }
- 100%{
-   background-color: #ff9ac4;
- }
-}
-
-.triangle-topleft {
-      width: 0;
-      height: 0;
-      border-top: 80px dotted rgb(187, 255, 0);
-      border-right: 80px dotted #66ff00c2;
-      animation: color 2s infinite;
+    body{
+      width:1400px;
+      margin-left:20px;
+      justify-content:center;
+      text-align:-webkit-center;
     }
-  
+    .row-pattern2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
-.row-pattern2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+    .row-pattern1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position:fixed;
+      mix-blend-mode:difference;
+    }
+
+    @keyframes color{
+      0%{
+        background-color:rgb(255, 217, 0);
+      }
+      50%{
+        background-color: rgb(187, 255, 0);
+      }
+     100%{
+       background-color: #ff9ac4;
+     }
+    }
+    
+    .triangle-topleft {
+          width: 0;
+          height: 0;
+          border-top: 80px dotted rgb(187, 255, 0);
+          border-right: 80px dotted #66ff00c2;
+          animation: color 2s infinite;
+        }
+      
+    .triangle-topright{
+      width: 80px;
+      height: 80px;
+      border-top: 80px dotted rgb(187, 255, 0);
+      border-right: 80px dotte solid red;
+      background-color: red;
+    }
+
+    
