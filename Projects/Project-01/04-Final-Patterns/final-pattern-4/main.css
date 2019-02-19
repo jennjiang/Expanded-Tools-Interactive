@@ -8,6 +8,7 @@ body{
   flex-direction:row; 
   flex-wrap:wrap;
   justify-content:center;
+  mix-blend-mode: multiply;
   
 }
 .circle1{
@@ -47,7 +48,7 @@ body{
   height: 220px;
   border-radius: 50%;
   display:inline-block;
-  background-color:red;
+  background-color:blue;
 }
 
 .circle6{
@@ -68,16 +69,19 @@ body{
 }
 
 .square1{
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   background-color:#2500ff;
   display:inline-block;
   padding:10px;
   margin:0px;
-  border-style: solid;
-  border-width: 20px;
-  border-color: pink;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
+
+.square1:hover {
+  width: 200px;
+  height: 200px;
+  transform: translate(220px,0);
 }
 
 .square2{
@@ -96,6 +100,13 @@ body{
   display:inline-block;
   padding:10px;
   margin:0px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.square3:hover {
+  /* background-color:lime; */
+  width: 200px;
+  height: 200px;
+  transform: translate(220px,0);
 }
 
 .square4{
@@ -108,15 +119,12 @@ body{
 }
 
 .square4{
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   background-color:yellow;
   display:inline-block;
   padding:10px;
   margin:0px;
-  border-style: solid;
-  border-width: 20px;
-  border-color: pink;
 }
 
 .square5{
@@ -126,6 +134,13 @@ body{
   display:inline-block;
   padding:10px;
   margin:0px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.square5:hover {
+  width: 200px;
+  height: 200px;
+  transform: translate(220px,0);
 }
 
 .square6{

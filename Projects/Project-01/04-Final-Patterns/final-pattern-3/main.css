@@ -14,16 +14,6 @@ body{
   
 }
 
-#top{
-  position:fixed;
-  display:flex;
-  flex-direction:row; 
-  flex-wrap:wrap;
-  justify-content:center;
-  padding-left: 13px;
-  padding-right: 13px;
-  
-}
 .circle{
   width: 250px;
   height: 250px;
@@ -31,14 +21,27 @@ body{
   display:inline-block;
   background-color:#FFFF00;
   padding:0px;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
-.circle2{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  display:inline-block;
-  background-color:#4351FF;
-  padding:0px;
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    background-color: #4351FF;
+    border-radius: 100%;
+  }
+  /* 70% {
+    background-color: rgb(255, 187, 0);
+  } */
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+  }
 
-}

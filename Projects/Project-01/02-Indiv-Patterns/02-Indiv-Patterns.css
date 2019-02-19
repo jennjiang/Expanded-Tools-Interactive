@@ -1,43 +1,43 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.5em;
-  background: white;
+* {
+	box-sizing: border-box;
+}
+.main{
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
 }
 
+body{
 
-.main {
-  text-align: center;
-  display: inline;
-  margin: 50px;
-  padding: 50px;
+	font-family: sans-serif;
+	line-height: 1.5em;
+	background:white;
 }
 
 h1{
-  font-size: 50px;
-  text-align: center;
-  color:blue;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color:blue;
-  padding:10px;
-}
-.link {
-  margin: 40px;
-  padding: 10px;
-  font-size: 40px;
-  font-style: bold;
-  color: blue;
+	margin-top: 10px;
+	padding:20px;
+	font-size: 4em;
+	font-style: bold;
+	text-align: center;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #4d00ff;
 }
 
-a:link {
-  color: blue;
-  text-decoration:none;
+h2{
+	margin:auto;
+	padding:20px;
+	font-size: 2em;
+	text-align: center;	
 }
-a:visited{
-  color: blue;
-  text-decoration:none;
+
+a{
+	color: #0000ff;
+	text-decoration: none;
 }
-a:hover {
-  color: red;
+
+a:hover{
+	color:red;
+	text-decoration: none;
 }
-/*# sourceMappingURL=02-Indiv-Patterns.css.map */
