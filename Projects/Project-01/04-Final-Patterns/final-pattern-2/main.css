@@ -2,15 +2,6 @@ body{
 	background-color: #FFFF67;
 }
 
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
-    color:white;
-    width:100px;
-    height:100px;
-    padding:25px;
-}
-
 #st{
   justify-content:center;
   align-items: center;

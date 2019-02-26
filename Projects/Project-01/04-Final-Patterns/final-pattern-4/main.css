@@ -81,7 +81,7 @@ body{
 .square1:hover {
   width: 200px;
   height: 200px;
-  transform: translate(220px,0);
+  transform: translate(0,220px);
 }
 
 .square2{
@@ -106,7 +106,7 @@ body{
   /* background-color:lime; */
   width: 200px;
   height: 200px;
-  transform: translate(220px,0);
+  transform: translate(-220px,0);
 }
 
 .square4{
@@ -140,7 +140,7 @@ body{
 .square5:hover {
   width: 200px;
   height: 200px;
-  transform: translate(220px,0);
+  transform: translate(0,220px);
 }
 
 .square6{

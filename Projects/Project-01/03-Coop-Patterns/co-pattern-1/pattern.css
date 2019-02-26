@@ -29,30 +29,30 @@
 
     @keyframes color{
       0%{
-        background-color:rgb(255, 217, 0);
+        border-top: 80px dotted rgb(238, 255, 0,0);
+           border-right: 80px dotted #66ff00c2;
       }
-      50%{
-        background-color: rgb(187, 255, 0);
-      }
+      /* 50%{
+        border-top: 80px dotted rgb(187, 255, 0);
+      } */
      100%{
-       background-color: #ff9ac4;
+      border-top: 80px dotted #ff93c0;
+      border-right: 80px dotted #60e806;
      }
     }
     
     .triangle-topleft {
           width: 0;
           height: 0;
-          border-top: 80px dotted rgb(187, 255, 0);
+          border-top: 80px dotted rgb(238, 255, 0, 0);
           border-right: 80px dotted #66ff00c2;
-          animation: color 2s infinite;
+        
+          transition:transform 2s ease-out;
         }
-      
-    .triangle-topright{
-      width: 80px;
-      height: 80px;
-      border-top: 80px dotted rgb(187, 255, 0);
-      border-right: 80px dotte solid red;
-      background-color: red;
-    }
 
-    
+    .triangle-topleft:hover {
+      transform: rotate(1000deg);
+      animation: color 2s infinite alternate;
+      opacity:50%;
+    }
+      

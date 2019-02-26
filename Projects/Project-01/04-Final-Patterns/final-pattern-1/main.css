@@ -1,39 +1,41 @@
+@keyframes color{
+  0%{
+     background-color:yellow; opacity:50%;
+   }
+  /* 50%{
+     transform: rotate(45deg);
+  } */
+  100%{
+     background-color:#ff00a6; opacity:50%;
+  }
+}
+
 body{
-	font-size:20px;
-  width: 1000px;
-  height: 1500px;
+  /* width: 1000px;
+  height:auto; */
 }
 
 #front{
+  /* margin: auto;
+  padding:10px; */
   mix-blend-mode: multiply;
-  position:absolute;
+  position: absolute;
   display:flex;
   flex-direction:row; 
   flex-wrap:wrap;
   justify-content:center;
-  
 }
+
 
 #back{
   mix-blend-mode: multiply;
+  margin-top: 130px; 
+  margin-bottom: 230px;
   position:fixed;
   display:flex;
   flex-direction:row; 
   flex-wrap:wrap;
-  justify-content:center;
-  
-}
-
-@keyframes color{
-  0%{
-     background-color:lime; opacity:0;
-   }
-  50%{
-     background-color:yellow;
-  }
-  100%{
-     background-color:#ff00a6; opacity:50%;
-  }
+  justify-content:center;  
 }
 
 .circle{
@@ -48,21 +50,18 @@ background-color:yellow;
 padding:20px;
 margin:50px;
 transform: scale(0.9);
-animation: color 5s infinite;
-animation-timing-function: ease-out;
-animation-direction: alternate;
+transition: transform 1s ease-in-out; 
+
 /* -webkit-transition: background-color 2s ease-out;
 -moz-transition: background-color 2s ease-out;
 -o-transition: background-color 2s ease-out;
 transition: background-color 2s ease-out; */
 }
 
-
-/* .circle:hover {
-  background-color:#ff00a6 ;
-  cursor: pointer;
-} */
-
+.circle:hover {
+ animation: color 1s ease-out infinite alternate;
+ transform:rotate(-190deg);
+}
 
 .circle1{
   width: 100px;
@@ -74,25 +73,11 @@ transition: background-color 2s ease-out; */
   border-width: 60px;
   padding:20px;
   margin:50px;
+  transition: transform 1s ease-in-out;
 }
 
+.circle1:hover {
+  transform: translate(400px,0);
+ }
 
 
-/*
-.box {
-  width: 150px;
-  height: 150px;
-  background: red;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
-}
-
-.box:hover {
-  background-color: green;
-  cursor: pointer;
-}*/
