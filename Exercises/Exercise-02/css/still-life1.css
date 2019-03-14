@@ -6,24 +6,6 @@ body {
 	background: #DADADA;
 }
 
-h3{
-	font-family: 'Open Sans', sans-serif;
-	font-size:15px;
-	color:white;
-	position:absolute;
-	left:540px;
-	top:200px;
-}
-
-h4{
-	font-family: 'Open Sans', sans-serif;
-	font-size:10px;
-	padding:10px;
-	color:white;
-	position:relative;
-	left:460px;
-	top:220px;
-}
 
 @keyframes move{
 	10%{
