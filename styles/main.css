@@ -1,56 +1,78 @@
 * {
 	box-sizing: border-box;
 }
+
+#flow{
+	font-family: 'Ubuntu', sans-serif;
+	position:fixed;
+	line-height:1;
+	padding:20px;
+	font-size: 3.5em;
+	text-align:center;
+  }
+
+#projects{
+    position:relative;
+    left:600px;
+    top:auto;
+    bottom:245px;
+}
+
+#exercises{
+    position:relative;
+    left:auto;
+    top:80px;
+}
+
 .main{
 	width: 80%;
 	margin: 100px auto;
 	padding: 20px;
 }
 
-#exercise{
-    position: relative;
-    left:10px;
-}
-
-#projects{
-    position: relative;
-    left:10px;
-}
 
 body{
-
 	font-family: sans-serif;
 	line-height: 1.5em;
 	background:white;
 }
 
+.logo{
+	font-family: 'Ubuntu', sans-serif;
+	top:40px;
+	line-height:1.5;
+	position:relative;
+	color: #4d00ff;
+	font-size:3.5em;
+	text-align:center;
+}
+  
+  
 h1{
 	font-family:'Oswald', sans-serif;
-	text-align: center;
-	padding:20px;
-	margin-top:100px;
-	text-align:center;
-	font-size: 3.5em;
-	font-style: bold;
-	-webkit-text-fill-color: #4d00ff; /* Will override color (regardless of order) */
+	-webkit-text-fill-color:transparent; 
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #4d00ff; /* Will override color (regardless of order) */
 	text-decoration: none;
 }
 
 h2{
 	font-family: 'Ubuntu', sans-serif;
+	color: #4d00ff;
 	margin:auto;
-	padding:20px;
+	position:relative;
+	left:14px;
+	padding-bottom:20px;
 	font-size: 2.5em;
-	text-align:center;
+	text-align:left;
 	display: block;	
 }
 
 a{  
-    font-size: 1.5em;
-	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #4d00ff;
-	text-decoration: none;
+    font-size: 2em;
+    line-height:1.1;
+	color:#4d00ff;
+	text-decoration:none;
 	
 }
 
@@ -58,7 +80,7 @@ a:hover{
 	-webkit-text-fill-color: #4d00ff; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: #4d00ff;
-	text-decoration: none;
+	text-decoration:red underline wavy;
 }
 
 ul {
@@ -69,4 +91,8 @@ ul {
   ul li {
     color: #CCC;
   }
+
+
+
+
 
