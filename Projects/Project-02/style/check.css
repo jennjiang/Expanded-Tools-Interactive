@@ -1,0 +1,184 @@
+.submit{
+  position: absolute;
+  left:500px;
+  top:670px;
+}
+
+.select{
+  position: absolute;
+  left:230px;
+  top:470px;
+  
+}
+.button {
+  background-color: rgb(17, 0, 255);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+object.white{
+  width:190px;
+  height: auto;
+  position: absolute;
+  margin-bottom:10px;
+  left:20px;
+}
+object.white1{
+  width:180px;
+  height: auto;
+  position: absolute;
+  margin-bottom:110px;
+  left:20px;
+}
+
+.show1 img{
+  width:270px;
+  height: auto;
+  position: absolute;
+  left:360px;
+  bottom:120px;
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+.show1:hover > img{
+  opacity:1;
+  position: absolute;
+  left:360px;
+  bottom:120px;
+  mix-blend-mode:multiply;
+  filter: grayscale(100%);
+}
+
+img {
+  pointer-events: none;
+}
+
+.show2 img{
+  width:270px;
+  height:auto;
+  position: absolute;
+  left:360px;
+  bottom:130px;
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+.show2:hover > img{
+  opacity:1;
+  position: absolute;
+  left:360px;
+  bottom:130px;
+  mix-blend-mode:multiply;
+  filter: grayscale(100%);
+}
+
+.show3 img{
+  width:270px;
+  height: auto;
+  position: absolute;
+  left:360px;
+  bottom:210px;
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+.show3:hover > img{
+  opacity:1;
+  position: absolute;
+  left:360px;
+  bottom:210px;
+  mix-blend-mode:multiply;
+  filter: grayscale(100%);
+}
+.show4 img{
+  width:270px;
+  height: auto;
+  position: absolute;
+  left:360px;
+  bottom:220px;
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+.show4:hover > img{
+  opacity:1;
+  position: absolute;
+  left:360px;
+  bottom:220px;
+  mix-blend-mode:multiply;
+  filter: grayscale(100%);
+}
+
+
+/* Create a custom radio button */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+  background-color: blue;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+

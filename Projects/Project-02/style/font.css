@@ -1,0 +1,369 @@
+h1{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2em;
+    color:#0c23fb;
+    text-align: right;
+    padding:20px;
+}
+
+a{
+	-webkit-text-fill-color:white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #0c23fb;
+	text-decoration: none;
+	
+}
+
+a:hover{
+	-webkit-text-fill-color: #0c23fb; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #0c23fb;
+	text-decoration: none;
+}
+
+object.coffee{
+    width:500px;
+    position:absolute;
+    left:80px;
+    top:2px;
+}
+
+/* coffee beans */
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    } 
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg);
+    } 
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+
+.bean{
+    width:60px;
+    position:absolute;
+    left:450px;
+    top:25px;
+    animation: spin 2s infinite alternate;
+}
+.bean1{
+    width:60px;
+    position:absolute;
+    left:510px;
+    top:45px;
+    animation: spin2 2s infinite alternate;
+}
+.bean2{
+    width:60px;
+    position:absolute;
+    left:450px;
+    top:440px;
+    animation: spin2 2s infinite alternate;
+}
+.bean3{
+    width:60px;
+    position:absolute;
+    transform:rotate(-60deg);
+    left:100px;
+    top:441px;
+    animation: spin 2s infinite alternate;
+}
+
+.bean4{
+    width:60px;
+    position:absolute;
+    left:65px;
+    top:390px;
+    animation: spin2 2s infinite alternate;
+}
+
+/* yes or no check box */
+.check{
+    height:115px;
+    width:130px;
+    position:absolute;
+    background-color:white;
+    border: 3px dotted blue;
+    left:500px;
+    top:420px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.yes{
+    width: 80px;
+    height: auto;
+}
+
+.no{
+    position:absolute;
+    width: 50px;
+    height: auto;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    margin-left:10px;
+    top: 10px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #0c23fb;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* the font box */
+div.font {
+    position: absolute;
+    top:500px;
+    left:50px;
+    background-color:#0c23fb;
+    width: 140px;
+    height: 130px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+div.font img{
+    width:122px;
+    height:auto;
+}
+/* the number box */
+div.number {
+    position: absolute;
+    top:30px;
+    left:600px;
+    background-color:#0c23fb;
+    width: 120px;
+    height: 130px;
+    overflow-x: scroll;
+    overflow-y:hidden;
+}
+
+.number img{
+    width:1300px;
+    height:auto;
+}
+
+object.cup{
+    position:relative;
+    margin:20px;
+    bottom:70px;
+    left:700px;
+    width:200px;
+    height:auto;
+}
+/* the sign box */
+div.sign {
+    position: absolute;
+    top:200px;
+    left:1000px;
+    background-color:#0c23fb;
+    width: 140px;
+    height: 130px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.sign img{
+    width:130px;
+    height:auto;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0c23fb; 
+}
+
+/* slidebar */
+object.bar{
+    position:absolute;
+    left:800px;
+    top:400px;
+    width:300px;
+    height:auto;
+}
+.slidecontainer {
+    position: absolute;;
+    top:480px;
+    width:100px;
+    left:970px;
+    transform:rotate(90deg);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 210px;
+    height: 12px;
+    border-radius:10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background: blue;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: blue;
+    cursor: pointer;
+    
+}
+/* the size box */
+.size{
+    height:170px;
+    width:160px;
+    position:absolute;
+    background-color:white;
+    border: 3px dotted blue;
+    left:1200px;
+    top:300px;
+}
+
+.container3 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark3 {
+    position: absolute;
+    margin-left:10px;
+    top: 10px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container3 input:checked ~ .checkmark3 {
+    background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark3:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container3 input:checked ~ .checkmark3:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container3 .checkmark3:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container3 img{
+    width:120px;
+    height:auto;
+}
+
+.container2.show-image img {
+    opacity: 1;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" tpe="text/css" href="style/font.css">
+    <link rel="stylesheet" tpe="text/css" href="style/check.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <title>but first coffee</title>
+</head>
+
+<body>
+    <h1><a href="about.html">About</a></h1>
+    <!-- but first coffee -->
+    <object class="coffee" type="image/svg+xml" data="images/FONT-12.svg">
+    </object>
+    
+    <!-- coffee beans -->
+    <img src="images/coffee-bean-malerapaso.png" class="bean">
+    <img src="images/coffee-bean-malerapaso.png" class="bean1">
+    <img src="images/coffee-bean-malerapaso.png" class="bean2">
+    <img src="images/coffee-bean-malerapaso.png" class="bean3">
+    <img src="images/coffee-bean-malerapaso.png" class="bean4">
+    
+    <!-- yes or no checkbox -->
+    <div class="check">
+        <label class="container"><img src="images/FONT-13.jpg" class="yes">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container"><img src="images/FONT-14.jpg" class="no">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    
+    <!-- the font -->
+    <div class="font">
+        <img src="images/FONT-15.jpg">
+    </div>
+    
+    <!-- number -->
+    <div>
+        <div class="number">
+            <img src="images/number-10.jpg">
+        </div>
+        <object class="cup" type="image/svg+xml" data="images/FONT-11.svg">
+        </object>
+    </div>
+    <!-- slidebar -->
+    <div class="barcontainer">
+        <object class="bar" type="image/svg+xml" data="images/FONT-21.svg"></object>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+    </div>
+    <!-- the sign -->
+    <div class="sign">
+        <img src="images/FONT-24.jpg">
+    </div>
+    
+    <!-- selection -->
+    <form name="MyForm">
+        <div class="submit">
+            <input type="button" class="button" value="submit" onclick="onSubmit()"><br>
+        </div>
+        <div class="select">
+            <label class="container2">
+                <input type="radio" name="item" value="espresso">
+                <div class="show1">
+                    <object class="white" type="image/svg+xml" data="images/FONT-16.svg"></object><br>
+                    <img src="images/espresso.jpg">
+                </div>
+                <span class="checkmark2"></span>
+            </label>
+            
+            <label class="container2">
+                <input type="radio" name="item" value="flat-white">
+                <div class="show2">
+                    <object class="white" type="image/svg+xml" data="images/FONT-23.svg"></object>
+                    <img src="images/flat-white.jpg"><br>
+                </div>
+                <span class="checkmark2"></span>
+            </label>
+            
+            <label class="container2">
+                <input type="radio" name="item" value="americano">
+                <div class="show3"> 
+                    <object class="white" type="image/svg+xml" data="images/FONT-17.svg"></object>
+                    <img src="images/americano.jpg"><br>
+                </div>
+                <span class="checkmark2"></span>
+            </label>
+            
+            <label class="container2">
+                <input type="radio" name="item" value="cappunccino">
+                <div class="show4"> 
+                    <object class="white" type="image/svg+xml" data="images/FONT-18.svg"></object>
+                    <img src="images/cappunccino.jpg"><br>
+                </div>
+                <span class="checkmark2"></span>
+            </label>
+            
+        </div>
+        
+    </form>
+    
+    <!-- the size box -->
+    <div class="size">
+        <label class="container3"><img src="images/FONT-26.jpg">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark3"></span>
+        </label>
+
+        <label class="container3"><img src="images/FONT-27.jpg">
+            <input type="checkbox">
+            <span class="checkmark3"></span>
+        </label>
+
+        </label>
+        <label class="container3"><img src="images/FONT-28.jpg">
+            <input type="checkbox">
+             <span class="checkmark3"></span>
+        </label>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    
+    function onSubmit () {
+        var checked = $('input[name="item"]:checked').val();
+        var redirectPage = checked + '.html';
+        location = redirectPage;
+    }
+    
+    // $('input[name="item"]').on('click', function (event){
+    //     var el = $(this);
+    //     el.parent().addClass('show-image')
+    //   } else {
+    //     romveClass('show-image')
+    //   }
+    // }); 
+    
+    // list of 3 elements
+    // 1. ON CLICK you're gonna find the selected element
+    // 2. get selected element's value using jquery's val()
+    // 3. redirect to element's value + ".html"
+    //
+    
+</script>
+
+</html>
