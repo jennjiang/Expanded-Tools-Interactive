@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ffffda;
+    overflow: hidden;
+}
+
+a:hover { 
+    color: #fe0000; 
+    text-decoration: none;
+    text-align: center;
+}
+        
+.window-1 {
+    font-family: 'Futura LT Medium', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    display: inline;
+    text-align: left;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #ff6a6a;
+}
+
+.window-1 .typed-cursor {
+    display: inline;
+  }
+
+.animated-intro {
+    font-family: 'Futura LT Medium', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 7em;
+    text-align: left;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #ff6a6a;
+}
+  

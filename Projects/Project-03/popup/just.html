@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../styles/window_2.css">
+    <title>Do it</title>
+</head>
+
+<body>
+    <div class="container">
+        <a class="window-1" href="just do it.html" onclick="basicPopup(this.href);return false">JUST</a>
+    </div>
+
+</body>
+<script>
+    function basicPopup(url) {
+        popupWindow = window.open(url, 'popUpWindow', 'height=210,width=800,left=300,top=50,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+    }
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ff5b7a;
+    animation: color 5s ease infinite;
+}
+
+@keyframes color{
+    from{background:#E73C7E;}
+    to{background:#23A6D5;}
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover { 
+    color: #ffffff; 
+    text-decoration: none;
+    text-align: center;
+}
+        
+.window-1 {
+    font-family: 'Futura LT Medium', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 10em;
+    text-decoration: none;
+    color: white;
+}

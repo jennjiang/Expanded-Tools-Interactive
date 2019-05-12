@@ -1,0 +1,33 @@
+body{
+    background: #396e35;
+}
+
+@keyframes color {
+    0% {color: #6bdc7b;}
+    50% {color: #0b3511;}
+    100% {color: #6bdc7b;}
+}
+
+a:hover { 
+    color: #0b3511; 
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+    animation: color 3s ease-in-out infinite;
+    text-align: center;
+    text-decoration: none;
+}
+.window-1 {
+    font-family: 'Futura LT Medium', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 6.5em;
+    text-align: left;
+    position:relative;
+    top:30px;
+    left:40px;
+    text-decoration: none;
+    color: #6bdc7b;
+}

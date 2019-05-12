@@ -1,0 +1,21 @@
+body{
+    background: #1975e4;
+}
+
+a:hover { 
+    color: #53ffd6; 
+    text-decoration: none;
+    text-align: center;
+}
+        
+.window-1 {
+    font-family: 'Futura LT Medium', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 8em;
+    text-align: center;
+    position:relative;
+    margin-left:28%;
+    text-decoration: none;
+    color: #fee8ff;
+}
